@@ -11,7 +11,7 @@
     align-items: center;
 }
 .text-box {
-    height:29.6em;
+    height:calc(18vw + 3.6em);
     width: 50vw;
     text-align: center;
 }
