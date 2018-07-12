@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100vw;
+    height:100vh;
+    background-color: #778899;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-box {
+    height:29.6em;
+    width: 50vw;
+    text-align: center;
+}
+.text {
+    color: #FFF;
+    font-size:8em;
+    line-height:1.2em;
+}
