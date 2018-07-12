@@ -53,6 +53,7 @@ function yearChange() {
 const howLong = [dayChange(), monthChange(), yearChange()];
 console.log(howLong);
 
+//the if statements are to avoid saying "it's been 1 years" which just sounds weird
 let yearText = document.querySelector(".years");
 if (howLong[2] !== 1) {
     yearText.innerHTML = "It's been " + howLong[2] + " years,";
