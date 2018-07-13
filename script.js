@@ -21,7 +21,7 @@ if (isLeapYear) { //stores days in feb to put into array later
 
 let lessThan = 0; //a value to keep track of if the day/month is less so final date change will be accurate, ex january 2018, year would be 2 and month would be -10 but it should be 1 year and 2 months, this wil keep track to avoid & fix that
 
-const daysPerMonth = [31, feb, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]; //to be able to get days since last thirteenth for any month
+const daysPerMonth = [31, 31, feb, 31, 30, 31, 30, 31, 31, 30, 31, 30]; //to be able to get days since last thirteenth for any month, shifted forward one so you'll get days from month before not current one
 function dayChange() {
     if (today[0] >= firstDay[0]) {
         lessThan = 0;
