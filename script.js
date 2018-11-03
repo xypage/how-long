@@ -26,9 +26,13 @@ function dayChange() {
     if (today[0] >= firstDay[0]) {
         lessThan = 0;
         return today[0] - firstDay[0];
-    } else {
+    } else if(today[1] != 10) {
         lessThan = -1;
         return today[0] + (daysPerMonth[today[1]] - 13);
+    } else
+    {
+        lessThan = -1;
+        return 31 - (firstDay[0] - today[0]);
     }
 }
 
@@ -37,7 +41,10 @@ function monthChange() {
     if (change !== 0) {
         change += 12;
     }
-    if (today[1] >= firstDay[1]) {
+    if (today[1] == firstDay[1]) {
+        return 11;
+        lessThan = -1;
+    } else if (today[1] > firstDay[1]) {
         lessThan = 0;
     } else {
         lessThan = -1;
