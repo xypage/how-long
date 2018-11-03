@@ -5,7 +5,7 @@
 .container {
     width: 100vw;
     height:100vh;
-    background-color: #778899;
+    background: linear-gradient(to bottom, #0f355e 0%,#0082e5 100%);
     display:flex;
     justify-content: center;
     align-items: center;
